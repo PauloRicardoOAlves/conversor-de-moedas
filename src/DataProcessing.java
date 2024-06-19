@@ -1,9 +1,13 @@
 import com.google.gson.Gson;
+import modelos.Response;
 
 public class DataProcessing {
 
-    public static void ProcessingResponse(String data) {
+    public static double ProcessingResponse(String data) {
         Gson gson = new Gson();
-        String dataJson = gson.fromJson();
+
+        Response response = gson.fromJson(data, Response.class);
+
+        return response.getConversion_rate();
     }
 }
