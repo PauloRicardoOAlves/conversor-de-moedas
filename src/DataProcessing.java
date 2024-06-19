@@ -1,8 +1,7 @@
 import com.google.gson.Gson;
-import modelos.Response;
+import models.Response;
 
 public class DataProcessing {
-
     public static double ProcessingResponse(String data) {
         Gson gson = new Gson();
 
