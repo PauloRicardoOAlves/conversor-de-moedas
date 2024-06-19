@@ -7,4 +7,5 @@ public class Response {
     public double getConversion_rate() {
         return conversion_rate;
     }
+
 }
